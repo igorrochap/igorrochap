@@ -43,11 +43,12 @@ jobs:
       - name: JavaScript or TypeScript snippet of the day
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.code.svg
+          filename: code.svg
           token: ${{ secrets.METRICS_README }}
           base: ""
           plugin_code: yes
-          plugin_code_languages: javascript, typescript, php, python, java, go, jupyter notebook
+          plugin_code_visibility: all,
+          plugin_code_languages: javascript, php, python, java, go
           plugin_code_load: 400
       - name: LeetCode
         uses: lowlighter/metrics@latest
