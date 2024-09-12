@@ -22,7 +22,7 @@
 </div>
 
 <div>
- <img align='left' width="400" src='metrics.plugin.code.svg'/>
+ <img align='left' width="400" src='code.svg'/>
  <img aign='right' width="400" src='metrics.plugin.leetcode.svg'/>
 </div>
 
