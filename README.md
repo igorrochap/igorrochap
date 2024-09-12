@@ -1,4 +1,5 @@
-<div align='left'>
+<div align='center'>
+  <img width="150" src="ring.gif"/>
   <hr>
 </div>
 
