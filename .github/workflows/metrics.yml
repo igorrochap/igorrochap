@@ -23,7 +23,6 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
-          name: JavaScript or TypeScript snippet of the day
       - name: Recent activity
         uses: lowlighter/metrics@latest
         with:
@@ -48,7 +47,7 @@ jobs:
           token: ${{ secrets.METRICS_README }}
           base: ""
           plugin_code: yes
-          plugin_code_languages: javascript, typescript, php, python, java
+          plugin_code_languages: javascript, typescript, php, python, java, go, jupyter notebook
           plugin_code_load: 400
       - name: LeetCode
         uses: lowlighter/metrics@latest
