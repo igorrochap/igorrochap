@@ -8,7 +8,7 @@
       level software engineer.</h5>
   <p align="center">
      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=go,laravel,php,nodejs,javascript,vue,docker,ubuntu,notion,mysql,git" />
+        <img src="https://skillicons.dev/icons?i=laravel,php,go,nodejs,javascript,vue,docker,ubuntu,notion,mysql,git" />
      </a>
   </p>
 </div>
