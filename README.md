@@ -13,8 +13,8 @@
   </p>
 </div>
 <div>
- <img align='right' width="400" src='metrics.plugin.activity.svg'/>
-  <img align='right' width="400" src='metrics.plugin.wakatime.svg'/>
+  <img align='right' width="400" src='metrics.plugin.activity.svg'/>
+  <img align='left' width="400" src='metrics.plugin.wakatime.svg'/>
 </div>
 
 <div>
