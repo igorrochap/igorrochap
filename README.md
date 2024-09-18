@@ -13,18 +13,18 @@
   </p>
 </div>
 <div>
-  <img align='right' width="400" src='metrics.plugin.activity.svg'/>
-  <img align='left' width="400" src='metrics.plugin.wakatime.svg'/>
+   <img align='left' width="400" src='metrics.plugin.wakatime.svg'/>
+   <img align='right' width="400" src='metrics.plugin.achievements.compact.svg'/>
 </div>
 
 <div>
   <img align='left' width="400" src='languages.svg'/>
-  <img align='right' width="400" src='metrics.plugin.achievements.compact.svg'/>
+<!--    <img align='left' width="400" src='metrics.plugin.activity.svg'/> -->
 </div>
 
 <div>
- <img align='left' width="400" src='code.svg'/>
- <img aign='right' width="400" src='metrics.plugin.leetcode.svg'/>
+<!--  <img align='left' width="400" src='code.svg'/> -->
+ <img aign='left' width="400" src='metrics.plugin.leetcode.svg'/>
 </div>
 
 
