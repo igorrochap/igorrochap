@@ -14,8 +14,10 @@
      </a>
   </p>
 </div>
+<br>
+<br>
 <div>
-   <img align='left' width="400" src='metrics.plugin.wakatime.svg'/>
+   <img align='right' width="400" src='metrics.plugin.wakatime.svg'/>
 </div>
 
 <div>
@@ -24,8 +26,7 @@
 </div>
 
 <div>
-<!--  <img align='left' width="400" src='code.svg'/> -->
- <img aign='left' width="400" src='metrics.plugin.leetcode.svg'/>
+  <img aign='right' width="400" src='metrics.plugin.leetcode.svg'/>
 </div>
 
 
