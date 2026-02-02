@@ -6,7 +6,7 @@
 ![Profile Views](https://komarev.com/ghpvc/?username=igorrochap)
 
 <div align='left'>
-  <h5>My name is Igor Rocha, I'm 24yo, coursing Computing Engineering at Universidade Federal de Alagoas. I like spending time coding in Go and studying about software architecture and tests. Currently a mid- 
+  <h5>My name is Igor Rocha, I'm 25yo, coursing Computing Engineering at Universidade Federal de Alagoas. I like spending time coding in Go and studying about software architecture and tests. Currently a mid- 
       level software engineer.</h5>
   <p align="center">
      <a href="https://skillicons.dev">
@@ -21,7 +21,7 @@
 </div>
 
 <div>
-  <img align='left' width="400" src='languages.svg'/>
+  <!-- <img align='left' width="400" src='languages.svg'/> -->
 <!--    <img align='left' width="400" src='metrics.plugin.activity.svg'/> -->
 </div>
 
