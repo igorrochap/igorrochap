@@ -35,5 +35,5 @@
 ## Activity
 
 <p align="center">
-  <img width="480" src="metrics.plugin.wakatime.svg" alt="WakaTime coding activity metrics" />
+  <img width="640" src="wakatime.svg" alt="WakaTime coding activity metrics" />
 </p>
