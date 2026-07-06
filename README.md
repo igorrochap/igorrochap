@@ -1,34 +1,39 @@
-<div align='center'>
-  <img width="150" src="ring.gif"/>
-  <hr>
-</div>
+<p align="center">
+  <img width="140" src="ring.gif" alt="Pixel art ring" />
+</p>
 
-![Profile Views](https://komarev.com/ghpvc/?username=igorrochap)
+<h1 align="center">Hey, I'm Igor Rocha</h1>
 
-<div align='left'>
-  <h5>My name is Igor Rocha, I'm 25yo, coursing Information Systems at Instituto Federal de Alagoas. I like spending time coding in Go and studying about software architecture and tests. Currently a senior software engineer.</h5>
-  <p align="center">
-     <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=laravel,php,go,typescript,nodejs,postgres,mysql,vue,docker,ubuntu,git,notion" />
-     </a>
-  </p>
-</div>
-<br>
-<br>
-<div>
-   <img align='right' width="400" src='metrics.plugin.wakatime.svg'/>
-</div>
+<p align="center">
+  Senior Software Engineer focused on backend systems, Go, software architecture, and tests.
+  <br />
+  Studying Information Systems at Instituto Federal de Alagoas.
+</p>
 
-<div>
-  <!-- <img align='left' width="400" src='languages.svg'/> -->
-<!--    <img align='left' width="400" src='metrics.plugin.activity.svg'/> -->
-</div>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img
+      src="https://skillicons.dev/icons?i=go,typescript,nodejs,php,laravel,postgres,mysql,docker,linux,git"
+      alt="Go, TypeScript, Node.js, PHP, Laravel, PostgreSQL, MySQL, Docker, Linux, and Git"
+    />
+  </a>
+</p>
 
-<div>
-  <img aign='right' width="400" src='metrics.plugin.leetcode.svg'/>
-</div>
+## What I care about
 
+- Building reliable services that are simple to operate and change.
+- Designing boundaries that keep systems understandable over time.
+- Writing tests that make refactoring feel boring in the best way.
+- Improving developer experience through clear code, tooling, and feedback loops.
 
+## Now
 
+- Working mostly with backend engineering and system design.
+- Deepening my practice around Go, architecture, and testing.
+- Keeping an eye on pragmatic ways to ship better software with smaller feedback cycles.
 
+## Activity
 
+<p align="center">
+  <img width="480" src="metrics.plugin.wakatime.svg" alt="WakaTime coding activity metrics" />
+</p>
