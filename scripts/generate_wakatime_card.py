@@ -8,6 +8,7 @@ import base64
 import json
 import os
 import sys
+import time
 from html import escape
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -53,20 +54,57 @@ def main() -> int:
         default=os.environ.get("WAKATIME_OUTPUT", DEFAULT_OUTPUT),
         help="SVG output path",
     )
+    parser.add_argument(
+        "--max-attempts",
+        type=int,
+        default=int(os.environ.get("WAKATIME_MAX_ATTEMPTS", "8")),
+        help="maximum attempts while WakaTime is refreshing cached stats",
+    )
+    parser.add_argument(
+        "--retry-delay",
+        type=int,
+        default=int(os.environ.get("WAKATIME_RETRY_DELAY", "15")),
+        help="seconds to wait between stale WakaTime stats retries",
+    )
     args = parser.parse_args()
 
-    stats = DEMO_STATS if args.demo else fetch_stats(args.range)
+    stats = DEMO_STATS if args.demo else fetch_stats(args.range, args.max_attempts, args.retry_delay)
     Path(args.output).write_text(render_svg(stats, args.range), encoding="utf-8")
     print(f"Generated {args.output}")
     return 0
 
 
-def fetch_stats(stats_range: str) -> dict:
+def fetch_stats(stats_range: str, max_attempts: int, retry_delay: int) -> dict:
     api_key = os.environ.get("WAKATIME_SECRET")
     if not api_key:
         raise SystemExit("WAKATIME_SECRET is required. Use --demo for local preview data.")
 
+    if max_attempts < 1:
+        raise SystemExit("WAKATIME_MAX_ATTEMPTS must be at least 1.")
+
     token = base64.b64encode(api_key.encode("utf-8")).decode("ascii")
+
+    for attempt in range(1, max_attempts + 1):
+        status_code, data = fetch_stats_once(stats_range, token)
+        is_up_to_date = data.get("is_up_to_date", True)
+        status = data.get("status", "unknown")
+        percent = data.get("percent_calculated", "unknown")
+
+        print(
+            f"WakaTime stats attempt {attempt}/{max_attempts}: "
+            f"http={status_code}, status={status}, percent={percent}, up_to_date={is_up_to_date}"
+        )
+
+        if status_code != 202 and is_up_to_date:
+            return data
+
+        if attempt < max_attempts:
+            time.sleep(retry_delay)
+
+    raise SystemExit("WakaTime stats were still stale after all retry attempts.")
+
+
+def fetch_stats_once(stats_range: str, token: str) -> tuple[int, dict]:
     request = Request(
         f"{API_BASE_URL}/users/current/stats/{stats_range}",
         headers={
@@ -78,6 +116,7 @@ def fetch_stats(stats_range: str) -> dict:
 
     try:
         with urlopen(request, timeout=20) as response:
+            status_code = response.status
             payload = json.loads(response.read().decode("utf-8"))
     except HTTPError as error:
         body = error.read().decode("utf-8", errors="replace")
@@ -88,7 +127,7 @@ def fetch_stats(stats_range: str) -> dict:
     data = payload.get("data")
     if not isinstance(data, dict):
         raise SystemExit("WakaTime API response did not include a data object.")
-    return data
+    return status_code, data
 
 
 def render_svg(stats: dict, stats_range: str) -> str:
