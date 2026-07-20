@@ -11,49 +11,49 @@
   <text class="muted" x="28" y="58" font-size="12">Last 7 days</text>
   <rect class="card border" x="28" y="78" width="170" height="58" rx="8" />
   <text class="muted" x="44" y="102" font-size="12">Total</text>
-  <text class="text mono" x="44" y="124" font-size="17" font-weight="600">25 hrs 8 mins</text>
+  <text class="text mono" x="44" y="124" font-size="17" font-weight="600">22 hrs 21 mins</text>
   <rect class="card border" x="226" y="78" width="170" height="58" rx="8" />
   <text class="muted" x="242" y="102" font-size="12">Daily average</text>
-  <text class="text mono" x="242" y="124" font-size="17" font-weight="600">4 hrs 11 mins</text>
+  <text class="text mono" x="242" y="124" font-size="17" font-weight="600">4 hrs 28 mins</text>
   <rect class="card border" x="424" y="78" width="170" height="58" rx="8" />
   <text class="muted" x="440" y="102" font-size="12">Top language</text>
-  <text class="text mono" x="440" y="124" font-size="17" font-weight="600">Go 37%</text>
+  <text class="text mono" x="440" y="124" font-size="17" font-weight="600">Go 39%</text>
   <text class="text" x="28" y="158" font-size="14" font-weight="600">Languages</text>
   <text class="muted" x="28" y="188" font-size="12">Go</text>
-  <text class="muted" x="298" y="188" font-size="12" text-anchor="end">37%</text>
+  <text class="muted" x="298" y="188" font-size="12" text-anchor="end">39%</text>
   <rect class="bar-bg" x="28" y="195" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="195" width="68" height="7" rx="3.5" />
-  <text class="muted" x="28" y="212" font-size="12">Java</text>
+  <rect class="bar" x="28" y="195" width="71" height="7" rx="3.5" />
+  <text class="muted" x="28" y="212" font-size="12">Markdown</text>
   <text class="muted" x="298" y="212" font-size="12" text-anchor="end">20%</text>
   <rect class="bar-bg" x="28" y="219" width="184" height="7" rx="3.5" />
   <rect class="bar" x="28" y="219" width="36" height="7" rx="3.5" />
-  <text class="muted" x="28" y="236" font-size="12">Markdown</text>
+  <text class="muted" x="28" y="236" font-size="12">Java</text>
   <text class="muted" x="298" y="236" font-size="12" text-anchor="end">18%</text>
   <rect class="bar-bg" x="28" y="243" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="243" width="33" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="243" width="32" height="7" rx="3.5" />
   <text class="muted" x="28" y="260" font-size="12">Bash</text>
-  <text class="muted" x="298" y="260" font-size="12" text-anchor="end">9%</text>
+  <text class="muted" x="298" y="260" font-size="12" text-anchor="end">10%</text>
   <rect class="bar-bg" x="28" y="267" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="267" width="17" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="267" width="18" height="7" rx="3.5" />
   <text class="muted" x="28" y="284" font-size="12">Other</text>
   <text class="muted" x="298" y="284" font-size="12" text-anchor="end">4%</text>
   <rect class="bar-bg" x="28" y="291" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="291" width="7" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="291" width="6" height="7" rx="3.5" />
   <text class="text" x="342" y="158" font-size="14" font-weight="600">Tools</text>
   <text class="muted" x="342" y="188" font-size="12">VS Code</text>
   <text class="muted" x="612" y="188" font-size="12" text-anchor="end">72%</text>
   <rect class="bar-bg" x="342" y="195" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="342" y="195" width="133" height="7" rx="3.5" />
+  <rect class="bar" x="342" y="195" width="131" height="7" rx="3.5" />
   <text class="muted" x="342" y="212" font-size="12">Claude Code</text>
   <text class="muted" x="612" y="212" font-size="12" text-anchor="end">28%</text>
   <rect class="bar-bg" x="342" y="219" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="342" y="219" width="50" height="7" rx="3.5" />
+  <rect class="bar" x="342" y="219" width="52" height="7" rx="3.5" />
   <text class="muted" x="342" y="236" font-size="12">Mac</text>
-  <text class="muted" x="612" y="236" font-size="12" text-anchor="end">82%</text>
+  <text class="muted" x="612" y="236" font-size="12" text-anchor="end">80%</text>
   <rect class="bar-bg" x="342" y="243" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="342" y="243" width="150" height="7" rx="3.5" />
+  <rect class="bar" x="342" y="243" width="146" height="7" rx="3.5" />
   <text class="muted" x="342" y="260" font-size="12">WSL</text>
-  <text class="muted" x="612" y="260" font-size="12" text-anchor="end">18%</text>
+  <text class="muted" x="612" y="260" font-size="12" text-anchor="end">20%</text>
   <rect class="bar-bg" x="342" y="267" width="184" height="7" rx="3.5" />
-  <rect class="bar" x="342" y="267" width="33" height="7" rx="3.5" />
+  <rect class="bar" x="342" y="267" width="37" height="7" rx="3.5" />
 </svg>
