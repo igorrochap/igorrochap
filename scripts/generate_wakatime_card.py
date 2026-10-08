@@ -131,7 +131,7 @@ def fetch_stats_once(stats_range: str, token: str) -> tuple[int, dict]:
 
 
 def render_svg(stats: dict, stats_range: str) -> str:
-    languages = normalized_items(stats.get("languages", []), 5)
+    languages = normalized_items(stats.get("languages", []), 5, exclude_names={"other"})
     editors = normalized_items(stats.get("editors", []), 3)
     systems = normalized_items(stats.get("operating_systems", []), 2)
     tools = editors + systems
@@ -199,7 +199,7 @@ def section(title: str, items: list[dict], x: int, y: int, width: int) -> list[s
     return lines
 
 
-def normalized_items(items: object, limit: int) -> list[dict]:
+def normalized_items(items: object, limit: int, exclude_names: set[str] | None = None) -> list[dict]:
     if not isinstance(items, list):
         return []
 
@@ -207,12 +207,15 @@ def normalized_items(items: object, limit: int) -> list[dict]:
     for item in items:
         if not isinstance(item, dict):
             continue
+        name = str(item.get("name") or "Unknown")
+        if exclude_names and name.casefold() in exclude_names:
+            continue
         percent = clamp_percent(item.get("percent", 0))
         if percent <= 0:
             continue
         normalized.append(
             {
-                "name": str(item.get("name") or "Unknown"),
+                "name": name,
                 "percent": percent,
                 "text": str(item.get("text") or ""),
             }
