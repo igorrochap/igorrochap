@@ -35,6 +35,10 @@
   <text class="muted" x="298" y="260" font-size="12" text-anchor="end">8%</text>
   <rect class="bar-bg" x="28" y="267" width="184" height="7" rx="3.5" />
   <rect class="bar" x="28" y="267" width="15" height="7" rx="3.5" />
+  <text class="muted" x="28" y="284" font-size="12">JSON</text>
+  <text class="muted" x="298" y="284" font-size="12" text-anchor="end">7%</text>
+  <rect class="bar-bg" x="28" y="291" width="184" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="291" width="13" height="7" rx="3.5" />
   <text class="text" x="342" y="158" font-size="14" font-weight="600">Tools</text>
   <text class="muted" x="342" y="188" font-size="12">Codex Exec</text>
   <text class="muted" x="612" y="188" font-size="12" text-anchor="end">52%</text>
